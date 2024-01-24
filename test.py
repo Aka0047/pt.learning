@@ -196,3 +196,8 @@ fruits = ("apple", "banana", "cherry")
 print(green)
 print(yellow)
 print(blue)
+
+thislist= ["a","b","c"]
+thislist.append("d")
+print(thislist)
+
