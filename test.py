@@ -204,22 +204,63 @@ thislist.append("d")
 print(thislist)
 
 
-def main():
-    operation = input("What do you want to do?(+, -, *, or /):")
-    if (operation != "+" and operation != "-" and operation != "*" and operation != "/"):
-        print("Your input is invalid. Please enter a valid input.")
-    else:
-        num1 = float(input("Enter value for num1: "))
-        num2 = float(input("Enter value for num2: "))
-        if (operation == "+"):
-            print(add(num1, num2))
-        elif (operation == "-"):
-            print(subtract(num1, num2))
-        elif (operation == "*"):
-            print(multi(num1,num2))
-        elif (operation == "/"):
-            print(div(num1,num2))
+a = 400
+b = 201
+c = 500
+if a > b and c > a:
+  print("Both conditions are True")
+if a>b and a>c:
+  print("you doin great")
 
-if __name__ == "__main__":
-    main()+
+  
+  
+  
+  
+  
+  
+x=41
+if x > 10:
+  print("Above ten,")
+  if x > 20:
+    print("and also above 20!")
+  else:
+    print("but not above 20.")
+
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+
+thisdict ={
+  "brand": "ford",
+  "model":"Mustang",
+  "year":1964
+  }
+print(thisdict["brand"])
+
+thisdict = dict(name = "John", age = 36, country = "Norway")
+
+print(thisdict) 
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.keys()
+
+print(x) #before the change
+
+car["color"] = "white"
+
+print(x) #after the change
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+del thisdict["model"]
+print(thisdict)
 
